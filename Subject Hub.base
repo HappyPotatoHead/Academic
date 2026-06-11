@@ -1,0 +1,171 @@
+properties:
+  file.tags:
+    displayName: Tags
+views:
+  - type: table
+    name: Data Communications and Networking
+    filters:
+      and:
+        - file.folder == "Subjects/Year 1/Semester 1/Data Communications and Networking"
+    order:
+      - file.name
+      - file.tags
+    sort:
+      - property: file.name
+        direction: ASC
+    columnSize:
+      file.name: 410
+  - type: table
+    name: Introduction to Calculus and Applications
+    filters:
+      and:
+        - file.folder.startsWith("Subjects/Year 1/Semester 1/Introduction to Calculus and Applications")
+    order:
+      - file.name
+      - file.tags
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Introduction to Computer Organisation and Architecture
+    filters:
+      and:
+        - file.folder.startsWith("Subjects/Year 1/Semester 1/Introduction to Computer Organisation and Architecture")
+        - '!file.folder.endsWith("Diagrams")'
+    order:
+      - file.name
+      - file.tags
+    sort:
+      - property: file.ext
+        direction: ASC
+  - type: table
+    name: CyberSecurity
+    filters:
+      and:
+        - file.folder == "Subjects/Year 1/Semester 2/CyberSecurity"
+    order:
+      - file.name
+      - file.tags
+  - type: table
+    name: Analysis and Design of Information Systems
+    filters:
+      and:
+        - file.folder.startsWith("Subjects/Year 1/Semester 3/Analysis and Design of Information Systems")
+        - '!file.folder.endsWith("Diagrams")'
+    order:
+      - file.name
+      - file.tags
+  - type: table
+    name: Basic Algebra
+    filters:
+      and:
+        - file.folder == "Subjects/Year 1/Semester 3/Basic Algebra"
+    order:
+      - file.name
+      - file.tags
+  - type: table
+    name: Discrete Maths
+    filters:
+      and:
+        - file.folder == "Subjects/Year 1/Semester 3/Discrete Maths"
+    order:
+      - file.name
+      - file.tags
+  - type: table
+    name: Introduction to Database System
+    filters:
+      and:
+        - file.folder == "Subjects/Year 1/Semester 3/Introduction to Database System"
+    order:
+      - file.name
+      - file.tags
+  - type: table
+    name: Algorithm Analysis
+    filters:
+      and:
+        - file.folder == "Subjects/Year 2/Semester 1/Algorithm Analysis"
+    order:
+      - file.name
+      - file.tags
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Object-Oriented Programming Practices
+    filters:
+      and:
+        - file.folder == "Subjects/Year 2/Semester 1/Object-Oriented Programming Practices"
+    order:
+      - file.name
+      - file.tags
+  - type: table
+    name: Database Technology
+    filters:
+      and:
+        - file.folder.startsWith("Subjects/Year 2/Semester 3/Database Technology")
+        - '!file.folder.endsWith("Diagrams")'
+    order:
+      - file.name
+      - file.tags
+  - type: table
+    name: Inter-Networking Principles and Practices
+    filters:
+      and:
+        - file.folder == "Subjects/Year 2/Semester 3/Inter-Networking Principles and Practices"
+    order:
+      - file.name
+      - file.tags
+  - type: table
+    name: Operating Systems
+    filters:
+      and:
+        - file.folder == "Subjects/Year 2/Semester 3/Operating Systems"
+    order:
+      - file.name
+      - file.tags
+  - type: table
+    name: Japanese
+    filters:
+      or:
+        - file.folder == "Subjects/Year 3/Semester 1/Introduction to Japanese"
+        - file.folder == "Subjects/Year 3/Semester 1/Introduction to Japanese/Practices"
+        - file.folder == "Subjects/Year 3/Semester 1/Introduction to Japanese/Vocabulary"
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Information Technology Professional Ethics
+    filters:
+      and:
+        - file.folder.startsWith("Subjects/Year 3/Semester 1/Information Technology Professional Ethics")
+    sort:
+      - property: file.ext
+        direction: ASC
+  - type: table
+    name: Introduction to Inventive Problem Solving and Proposal Writing
+    filters:
+      and:
+        - file.folder.startsWith("Subjects/Year 3/Semester 1/Introduction to Inventive Problem Solving and Proposal Writing")
+    sort:
+      - property: file.ext
+        direction: ASC
+  - type: table
+    name: Malaysian Economy
+    filters:
+      and:
+        - file.folder == "Subjects/Year 3/Semester 2/Malaysian Economy"
+  - type: table
+    name: Fundamentals of Data Mining and Machine Learning
+    filters:
+      and:
+        - file.folder == "Subjects/Year 3/Semester 3/Fundamentals of Data Mining and Machine Learning"
+  - type: table
+    name: Fundamentals of Digital Media Technology
+    filters:
+      and:
+        - file.folder == "Subjects/Year 3/Semester 3/Fundamentals of Digital Media Technology"
+  - type: table
+    name: Principles of Deep Learning
+    filters:
+      and:
+        - file.folder == "Subjects/Year 3/Semester 3/Principles of Deep Learning"

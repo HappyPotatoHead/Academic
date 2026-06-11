@@ -1,0 +1,159 @@
+properties:
+  file.tags:
+    displayName: Tags
+views:
+  - type: table
+    name: Data Communication and Networking
+    filters:
+      and:
+        - file.folder == "Past Year Papers/Year 1/Semester 1/Data communication and Networking"
+  - type: table
+    name: Introduction to Computer Organisation and Architecture
+    filters:
+      and:
+        - file.folder == "Past Year Papers/Year 1/Semester 1/ICOA"
+    order:
+      - file.name
+      - file.tags
+    sort:
+      - property: file.name
+        direction: DESC
+  - type: table
+    name: Programming
+    filters:
+      and:
+        - file.folder == "Past Year Papers/Year 1/Semester 1/Programming"
+  - type: table
+    name: Cybersecurity
+    filters:
+      and:
+        - file.folder == "Past Year Papers/Year 1/Semester 2/Cybersecurity"
+  - type: table
+    name: English for Information Technology
+    filters:
+      and:
+        - file.folder == "Past Year Papers/Year 1/Semester 2/Cybersecurity"
+  - type: table
+    name: Analysis and Design for Information System
+    filters:
+      and:
+        - file.folder == "Past Year Papers/Year 1/Semester 3/Analysis and Design of Information System"
+  - type: table
+    name: Data Structure and Algorithms
+    filters:
+      and:
+        - file.folder == "Past Year Papers/Year 1/Semester 3/Data Structure and Algorithms"
+  - type: table
+    name: Discrete Maths
+    filters:
+      and:
+        - file.folder == "Past Year Papers/Year 1/Semester 3/Discrete Maths"
+  - type: table
+    name: Introduction to Database System
+    filters:
+      and:
+        - file.folder == "Past Year Papers/Year 1/Semester 3/Introduction to Database System"
+  - type: table
+    name: Algorithm Analysis
+    filters:
+      and:
+        - file.folder == "Past Year Papers/Year 2/Semester 1/Algorithm Analysis"
+    order:
+      - file.name
+      - file.tags
+    sort:
+      - property: file.name
+        direction: ASC
+    columnSize:
+      file.name: 242
+  - type: table
+    name: Artificial Intelligence Techniques
+    filters:
+      and:
+        - file.folder == "Past Year Papers/Year 2/Semester 1/Artificial Intelligence Techniques"
+    order:
+      - file.name
+      - file.tags
+  - type: table
+    name: Front-End Web Development
+    filters:
+      and:
+        - file.folder == "Past Year Papers/Year 2/Semester 1/Front-End Web Development"
+  - type: table
+    name: Object-Oriented Programming Practices
+    filters:
+      and:
+        - file.folder == "Past Year Papers/Year 2/Semester 1/Object-Oriented Programming Practices"
+    order:
+      - file.name
+      - file.tags
+  - type: table
+    name: Database Technology
+    filters:
+      and:
+        - file.folder == "Past Year Papers/Year 2/Semester 3/Database Technology"
+    order:
+      - file.name
+      - file.tags
+  - type: table
+    name: Inter-Networking Principles and Practices
+    filters:
+      and:
+        - file.folder == "Past Year Papers/Year 2/Semester 3/Inter-Networking Principles and Practices"
+    order:
+      - file.name
+      - file.tags
+    columnSize:
+      file.name: 440
+  - type: table
+    name: Object-Oriented Systems Analysis and Design
+    filters:
+      and:
+        - file.folder == "Past Year Papers/Year 2/Semester 3/Object-Oriented Systems Analysis and Design"
+  - type: table
+    name: Operating Systems
+    filters:
+      and:
+        - file.folder == "Past Year Papers/Year 2/Semester 3/Operating Systems"
+    order:
+      - file.name
+      - file.tags
+  - type: table
+    name: Software Engineering Principles
+    filters:
+      and:
+        - file.folder == "Past Year Papers/Year 2/Semester 3/Software Engineering Principles"
+  - type: table
+    name: Data Science
+    filters:
+      and:
+        - file.inFolder("Past Year Papers/Year 3/Semester 1/Data Science")
+        - and:
+            - '!file.inFolder("Past Year Papers/Year 3/Semester 1/Data Science/Papers")'
+  - type: table
+    name: Distributed Computer Systems
+    filters:
+      and:
+        - file.inFolder("Past Year Papers/Year 3/Semester 1/Distributed Computer Systems")
+  - type: table
+    name: Information Technology Professional Ethics
+    filters:
+      and:
+        - file.inFolder("Past Year Papers/Year 3/Semester 1/Information Technology Professional Ethics")
+        - and:
+            - '!file.inFolder("Past Year Papers/Year 3/Semester 1/Information Technology Professional Ethics/Papers")'
+  - type: table
+    name: Malaysian Economy
+    filters:
+      and:
+        - file.folder == "Past Year Papers/Year 3/Semester 2/Malaysian Economy"
+  - type: table
+    name: Fundamentals of Digital Media Technology
+    filters:
+      and:
+        - file.folder == "Past Year Papers/Year 3/Semester 3/Fundamentals of Digital Media Technology"
+  - type: table
+    name: Principles of Deep Learning
+    filters:
+      and:
+        - file.folder == "Past Year Papers/Year 3/Semester 3/Principles of Deep Learning"

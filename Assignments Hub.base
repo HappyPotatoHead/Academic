@@ -1,0 +1,168 @@
+properties:
+  file.tags:
+    displayName: Tags
+views:
+  - type: table
+    name: Introduction to Computer Organisation and Architecture
+    filters:
+      and:
+        - file.folder == "Assignments/Year 1/Semester 1/ICOA"
+    order:
+      - file.name
+      - file.tags
+    sort:
+      - property: file.name
+        direction: DESC
+  - type: table
+    name: Statistics
+    filters:
+      and:
+        - file.folder == "Assignments/Year 1/Semester 1/Statistics"
+  - type: table
+    name: English for Information Technology
+    filters:
+      and:
+        - file.folder == "Assignments/Year 1/Semester 2/English for Information Technology"
+  - type: table
+    name: Algorithm Analysis
+    filters:
+      and:
+        - file.folder.startsWith("Assignments/Year 2/Semester 1/Algorithm Analysis")
+    order:
+      - file.name
+      - file.tags
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Artificial Intelligence Techniques
+    filters:
+      and:
+        - file.folder.startsWith("Assignments/Year 2/Semester 1/Artificial Intelligence Techniques")
+    order:
+      - file.name
+      - file.tags
+  - type: table
+    name: Critical Reading and Thining
+    filters:
+      and:
+        - file.folder.startsWith("Assignments/Year 2/Semester 1/Critical Reading and Thinking")
+    order:
+      - file.name
+      - file.tags
+  - type: table
+    name: Front-End Web Development
+    filters:
+      and:
+        - file.folder == "Assignments/Year 2/Semester 1/Front-End Web Development"
+  - type: table
+    name: Object-Oriented Programming Practices
+    filters:
+      and:
+        - file.folder == "Assignments/Year 2/Semester 1/Object-Oriented Programming Practices"
+    order:
+      - file.name
+      - file.tags
+  - type: table
+    name: Database Technology
+    filters:
+      and:
+        - file.folder.startsWith("Assignments/Year 2/Semester 3/Database Technology")
+        - '!file.folder.endsWith("Diagrams")'
+    order:
+      - file.name
+      - file.tags
+  - type: table
+    name: Inter-Networking Principles and Practices
+    filters:
+      and:
+        - file.folder.startsWith("Assignments/Year 2/Semester 3/Inter-Networking Principles and Practices")
+    order:
+      - file.name
+      - file.tags
+    columnSize:
+      file.name: 440
+  - type: table
+    name: Object-Oriented Systems Analysis and Design
+    filters:
+      and:
+        - file.folder.startsWith("Assignments/Year 2/Semester 3/Object-Oriented Systems Analysis and Design")
+        - '!file.folder.endsWith("Diagrams")'
+  - type: table
+    name: Operating Systems
+    filters:
+      and:
+        - file.folder.startsWith("Assignments/Year 2/Semester 3/Operating Systems")
+    order:
+      - file.name
+      - file.tags
+  - type: table
+    name: Software Engineering Principles
+    filters:
+      and:
+        - file.folder == "Assignments/Year 2/Semester 3/Software Engineering Principles"
+  - type: table
+    name: Japanese
+    filters:
+      and:
+        - file.folder.startsWith("Assignments/Year 3/Semester 1/Introduction to Japanese")
+  - type: table
+    name: Mini Project
+    filters:
+      and:
+        - file.folder.startsWith("Assignments/Year 3/Semester 1/Mini Project")
+        - and:
+            - '!file.folder.startsWith("Assignments/Year 3/Semester 1/Mini Project/Papers")'
+  - type: table
+    name: Introduction to Inventive Problem Solving and Proposal Writing
+    filters:
+      and:
+        - file.inFolder("Assignments/Year 3/Semester 1/Introduction to Inventive Problem Solving and Proposal Writing")
+        - and:
+            - '!file.inFolder("Assignments/Year 3/Semester 1/Introduction to Inventive Problem Solving and Proposal Writing/Papers")'
+  - type: table
+    name: Information Technology Professional Ethics
+    filters:
+      and:
+        - file.inFolder("Assignments/Year 3/Semester 1/Information Technology Professional Ethics")
+    sort:
+      - property: file.ext
+        direction: ASC
+  - type: table
+    name: Distributed Computer Systems
+    filters:
+      and:
+        - file.inFolder("Assignments/Year 3/Semester 1/Distributed Computer Systems")
+        - not:
+            - file.inFolder("Assignments/Year 3/Semester 1/Distributed Computer Systems/Images")
+    sort:
+      - property: file.ext
+        direction: ASC
+  - type: table
+    name: Data Science
+    filters:
+      and:
+        - file.inFolder("Assignments/Year 3/Semester 1/Data Science")
+    sort:
+      - property: file.ext
+        direction: ASC
+  - type: table
+    name: Malaysian Economy
+    filters:
+      and:
+        - file.folder == "Assignments/Year 3/Semester 2/Malaysian Economy"
+  - type: table
+    name: Fundamentals of Data Mining and Machine Learning
+    filters:
+      and:
+        - file.folder == "Assignments/Year 3/Semester 3/Fundamentals of Data Mining and Machine Learning"
+  - type: table
+    name: Fundamentals of Digital Media Technology
+    filters:
+      and:
+        - file.folder.startsWith("Assignments/Year 3/Semester 3/Fundamentals of Digital Media Technology/Assignment 1")
+  - type: table
+    name: Principles of Deep Learning
+    filters:
+      and:
+        - file.folder == "Assignments/Year 3/Semester 3/Principles of Deep Learning/Assignment 1"

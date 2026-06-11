@@ -1,0 +1,30 @@
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Obsidian-specific files
+.obsidian/
+.obsidian/workspace
+.obsidian/workspace.json
+.obsidian/cache
+.obsidian/plugins/**
+
+# Temporary or log files
+*.log
+*.tmp
+*.swp
+*.bak
+*.lock
+
+# Files from other applications
+*.sync-conflict*
+*.icloud
+*.gdoc
+*.gsheet
+Assignments/Year 3/Semester 1/Introduction to Japanese/Supermarket.pdf
+Assignments/Year 3/Semester 3/Fundamentals of Digital Media Technology/Assignment 1/UCCD1213_CS_T1_2203262.pptx
+Assignments/Year 3/Semester 3/Fundamentals of Digital Media Technology/Assignment 2/DIGITAL_MEDIA_PRESENTATION_SLIDE.pptx
+*.mp4
+*.pptx
+Assignments/Year 3/Semester 3/Principles of Deep Learning/Assignment 2/backup_videos.zip
