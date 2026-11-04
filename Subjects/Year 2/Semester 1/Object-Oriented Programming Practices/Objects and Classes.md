@@ -24,13 +24,6 @@ In java specifically, it looks like this,
 *Snippet A: Student*
 ```java
 public class Student{
-	// Attributes
-	private String id;
-	private String name
-	private char gender;
-	private int age;
-	private String course;
-	
 	// Constructors
 	public Student(){}
 	public Student(String id, String name, char gender, int age, String course){
@@ -43,6 +36,13 @@ public class Student{
 	
 	// Methods
 	public String getName(){ return name; }
+	
+	// Attributes
+	private String id;
+	private String name
+	private char gender;
+	private int age;
+	private String course;
 }
 ```
 

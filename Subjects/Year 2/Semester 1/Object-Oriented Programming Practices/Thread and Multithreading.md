@@ -262,8 +262,11 @@ public class Circle(){
 	ReentrantLock lock = new ReentrantLock();
 	public void setRadius(double radius){
 		lock.lock();
-		this.radius = radius;
-		lock.unlock();
+		try{
+			this.radius = radius;
+		} finally {
+			lock.unlock();
+		}
 	}
 	private double radius;
 }
